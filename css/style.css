@@ -598,11 +598,13 @@ template {
 .rating__text {
   font-size: 8px;
   line-height: 10px;
+  font-weight: 600;
 }
 
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .rating__max {
