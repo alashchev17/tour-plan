@@ -11,37 +11,28 @@
 			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/swiper-bundle.min.js" defer></script>
+		<script src="./js/main.js" defer></script>
 	</head>
 	<body>
 		<header class="navbar">
 			<div class="container">
 				<div class="navbar-top">
 					<a href="#" class="logo">
-						<img
-							src="./images/horizontal-logo.svg"
-							alt="logo: Best Tour Plan"
-							class="logo__image"
-						/>
+						<img src="./images/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
 					</a>
 
 					<form action="#" class="search navbar__search">
-						<input
-							type="text"
-							class="search__input"
-							placeholder="Search Location"
-						/>
+						<input type="text" class="search__input" placeholder="Search Location" />
 						<button class="search__button">
 							<img src="./images/search.svg" alt="icon: search" />
 						</button>
 					</form>
 
 					<a href="#" class="user navbar__user">
-						<img
-							src="./images/user-avatar.jpg"
-							alt="avatar: Nathan"
-							class="user__avatar"
-						/>
+						<img src="./images/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
 						<span class="user__name">Nathan</span>
 					</a>
 					<!-- /.user -->
@@ -107,50 +98,55 @@
 					<div class="hotel-info__text">
 						<div class="hotel-wrapper">
 							<div class="stars hotel-info__stars">
-								<img
-									class="stars__item"
-									src="./images/star.svg"
-									alt="Icon: stars"
-								/>
-								<img
-									class="stars__item"
-									src="./images/star.svg"
-									alt="Icon: stars"
-								/>
-								<img
-									class="stars__item"
-									src="./images/star.svg"
-									alt="Icon: stars"
-								/>
-								<img
-									class="stars__item"
-									src="./images/star.svg"
-									alt="Icon: stars"
-								/>
-								<img
-									class="stars__item"
-									src="./images/star.svg"
-									alt="Icon: stars"
-								/>
+								<img class="stars__item" src="./images/star.svg" alt="Icon: stars" />
+								<img class="stars__item" src="./images/star.svg" alt="Icon: stars" />
+								<img class="stars__item" src="./images/star.svg" alt="Icon: stars" />
+								<img class="stars__item" src="./images/star.svg" alt="Icon: stars" />
+								<img class="stars__item" src="./images/star.svg" alt="Icon: stars" />
 							</div>
 							<h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
 							<span class="offer hotel-info__offer">Flash Offer</span>
 						</div>
 						<p class="hotel-description hotel-info__description">
-							Half-Board/ All Inclusive + Complimentary Activities + Child Stays
-							Free
+							Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
 						</p>
 					</div>
 					<!-- /.hotel-info__text -->
 					<div class="rating hotel-info__rating">
 						<span class="rating__text">User Rattings</span>
-						<span class="rating__counter"
-							>4.5/<span class="rating__max">5</span></span
-						>
+						<span class="rating__counter">4.5/<span class="rating__max">5</span></span>
 					</div>
 					<!-- /.hotel-info__rating -->
 				</div>
 				<!-- /.hotel-info -->
+				<div class="hotel-grid">
+					<div class="swiper-container hotel-slider hotel__slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper hotel-slider__wrapper">
+							<div class="swiper-slide hotel-slider__slide">
+								<img class="hotel-slider__image" src="./images/hotel-slider/slide-1.jpg" alt="Photo: Slide 1" />
+							</div>
+							<div class="swiper-slide hotel-slider__slide">
+								<img class="hotel-slider__image" src="./images/hotel-slider/slide-2.jpeg" alt="Photo: Slide 2" />
+							</div>
+							<div class="swiper-slide hotel-slider__slide">
+								<img class="hotel-slider__image" src="./images/hotel-slider/slide-3.jpg" alt="Photo: Slide 3" />
+							</div>
+							<div class="swiper-slide hotel-slider__slide">
+								<img class="hotel-slider__image" src="./images/hotel-slider/slide-4.jpg" alt="Photo: Slide 4" />
+							</div>
+							<div class="swiper-slide hotel-slider__slide">
+								<img class="hotel-slider__image" src="./images/hotel-slider/slide-5.jpg" alt="Photo: Slide 5" />
+							</div>
+						</div>
+
+						<!-- If we need navigation buttons -->
+						<button class="hotel-slider__button hotel-slider__button--prev"></button>
+						<button class="hotel-slider__button hotel-slider__button--next"></button>
+					</div>
+					<!-- /.swiper-container -->
+				</div>
+				<!-- /.hotel-grid -->
 			</div>
 			<!-- /.container -->
 		</section>

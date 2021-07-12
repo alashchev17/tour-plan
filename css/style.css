@@ -516,6 +516,63 @@ template {
   padding-bottom: 70px;
 }
 
+.hotel__slider {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.hotel-slider__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hotel-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background: url("../images/arrow-next.svg") no-repeat center;
+}
+
+.hotel-slider__button--prev {
+  left: 16px;
+  background: url("../images/arrow-prev.svg") no-repeat center;
+}
+
+.hotel-slider::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,11 +583,12 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__rating {
   margin-top: 4px;
-  padding: 3px 6px 6px 7px;
+  padding: 3px 4px 6px 5px;
 }
 
 .hotel-info__name {
