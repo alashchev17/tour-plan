@@ -1161,13 +1161,24 @@ template {
     width: 340px;
   }
   .reviews {
-    padding: 20px 0 70px 0;
+    padding: 46px 0 70px 0;
   }
   .reviews-slider__item {
     max-width: 579px;
   }
   .reviews-slider__text {
     max-height: 133px;
+  }
+  .reviews-slider__button {
+    top: 49%;
+    -webkit-transform: translateY(-49%);
+            transform: translateY(-49%);
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
   .reviews__title {
     font-size: 30px;
@@ -1356,7 +1367,7 @@ template {
     right: 6px;
   }
   .reviews {
-    padding: 27px 0 70px 0;
+    padding: 42px 0 70px 0;
   }
   .reviews__title {
     font-size: 18px;
