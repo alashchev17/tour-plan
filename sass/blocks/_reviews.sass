@@ -8,6 +8,7 @@
     text-transform: uppercase
     color: $text-color
     margin-bottom: 70px
+    margin-top: 0
   &-slider
     &__item
       position: relative
@@ -39,13 +40,15 @@
         right: 62px
     &__button
       +slider-button
+      top: 45%
+      transform: translateY(-45%)
       background-size: 10px
       &--prev
         background-image: url('../images/reviews-slider/arrow-prev.svg')
-        left: 0
+        left: 18px
       &--next
         background-image: url('../images/reviews-slider/arrow-next.svg')
-        right: 0
+        right: 18px
     &__profile
       display: flex
       flex-direction: column
@@ -72,13 +75,16 @@
       margin-bottom: 4px
     &__rating
       display: flex
+      &-item
+        &:not(:last-child)
+          margin-right: 2px
     &__text
       font-size: 12px
       line-height: 160%
       text-align: justify
       max-width: 537px
       margin: auto
-.rating
-  &__item
-    &:not(:last-child)
-      margin-right: 2px
+      max-height: 114px
+      overflow-Y: scroll
+
+  

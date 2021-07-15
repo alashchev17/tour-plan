@@ -28,6 +28,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 50px
     &-grid
       flex-direction: column
     &-slider
@@ -42,9 +43,17 @@
   .map
     width: 340px
   .reviews
+    padding: 20px 0 70px 0
     &-slider
       &__item
         max-width: 579px
+      &__text
+        max-height: 133px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 52px
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -176,3 +185,9 @@
       margin-left: auto
       margin-right: auto
       margin-bottom: 42px
+    &-slider
+      &__text
+        max-height: 266px
+        text-align: left
+  .booking
+    padding: 23px
