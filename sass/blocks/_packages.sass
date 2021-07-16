@@ -48,27 +48,31 @@
     background-color: $dark
     padding: 30px 20px 30px 32px
     color: $light
-    overflow: auto
+    flex-basis: 100%
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      height: 95%
+      flex-direction: column
+      justify-content: space-between
     &--big
       max-width: 364px
       padding: 38px 20px 35px 45px
-      overflow: auto
     &__stars
       margin-bottom: 5px
     &__title
       font-weight: bold
       font-size: 18px
       line-height: 23px
-      margin: 0 0 23px 0
+      margin: 0
       &--big
-        margin-bottom: 27px
     &__description
       max-height: 165px
       font-weight: normal
       font-size: 14px
       line-height: 160.6%
-      margin: 0 0 45px
       overflow: auto
+      margin-top: -6px
     &__data
       display: flex
       align-items: center
@@ -81,9 +85,7 @@
       font-size: 12px
       line-height: 15px
     &__pricetag
-      margin-top: 24px
       &--big
-        margin-top: 35px
     &__old-price
       display: block
       font-weight: normal
