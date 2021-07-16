@@ -913,10 +913,14 @@ template {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .packages-card__img--big {
   height: 500px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .packages-card__offer {
@@ -940,11 +944,13 @@ template {
   background-color: #0a223d;
   padding: 30px 20px 30px 32px;
   color: #ffffff;
+  overflow: auto;
 }
 
 .card-info--big {
   max-width: 364px;
   padding: 38px 20px 35px 45px;
+  overflow: auto;
 }
 
 .card-info__stars {
@@ -999,7 +1005,7 @@ template {
 }
 
 .card-info__pricetag--big {
-  margin-top: 37px;
+  margin-top: 35px;
 }
 
 .card-info__old-price {
@@ -1025,8 +1031,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  width: 120px;
-  min-height: 40px;
+  padding: 10px 25px;
   right: 21px;
   bottom: 25px;
   border-radius: 4px;
