@@ -4,6 +4,28 @@ body
   font-family: 'Mulish', sans-serif
   background-color: $secondary
   color: $text-color
+input, button, textarea
+  outline: none
+  border: none
+.button
+  background-color: $primary
+  cursor: pointer
+  color: $light
+a
+  text-decoration: none
+  color: inherit
+
+textarea
+  resize: none
+.input
+  border-radius: 4px
+  padding: 18px 23px
+  font-size: 12px
+  line-height: 15px
+  color: $text-color
+  position: relative
+  &::placeholder
+    color: $placeholder
 
 ::-webkit-scrollbar
   width: 5px // ширина для вертикального скролла 

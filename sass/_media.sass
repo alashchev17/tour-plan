@@ -11,6 +11,13 @@
     padding: 30px 0 60px
     &__title
       margin-bottom: 50px
+  .footer
+    &-wrapper
+      column-gap: 10px
+      grid-template-columns: minmax(120px,190px) repeat(3,minmax(200px, 1fr))
+    &__input
+      &-group
+        width: 100%
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -80,6 +87,73 @@
   .packages
     &-wrapper
       grid-template: repeat(3,500px)/ repeat(2, 1fr)
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: repeat(6,1fr)
+      grid-row-gap: 48px
+      padding-bottom: 56px
+    &__logo
+      max-width: 98px
+      grid-row: 1 / 2
+      grid-column: span 2
+      margin-top: 0
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 5
+      align-self: center
+      margin-left: -47px
+      margin-top: 10px
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-left: -30px
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-right: 0
+    &__contact
+      &-details
+        grid-row: 3 / 4
+        grid-column: span 6
+      &-form
+        grid-row: 4 / 5
+        grid-column: span 6
+    &__input
+      &-group
+        width: 47%
+    &__title
+      &--contact
+        margin-top: 13px
+      &--form
+        margin-top: 10px
+@media (min-width: 992px)
+  .button
+    &:hover
+      background-color: #8f001f
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $primary
+  .user
+    &__name
+      &:hover
+        color: $primary
+  .footer
+    &__social
+      &-icon
+        &:hover
+          border: 1px solid $light
+          border-radius: 50%
+    &__link
+      &:hover
+        color: $light
+        text-decoration: underline
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -178,6 +252,77 @@
       &__img
         &--big
           max-width: 250px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+      padding-bottom: 26px
+    &__logo
+      max-width: 98px
+      grid-row: 1
+      grid-column: 1
+      margin-top: 0
+      margin-bottom: 7px
+    &__social-network
+      grid-row: 2
+      grid-column: 1
+      align-self: center
+      margin-left: 0
+      margin-top: 0
+      flex-direction: column
+      align-items: flex-start
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+      margin-left: 0
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      margin-right: 0
+      justify-self: start
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        margin-top: 10px
+        margin-bottom: 26px
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__input
+      &-group
+        width: 100%
+    &__title
+      margin-bottom: 14px
+      &--inline
+        margin: 0 0 23px
+      &--contact
+        margin-top: 0
+        margin-bottom: 25px
+      &--form
+        margin-top: 0
+        margin-bottom: 15px
+      &:nth-child(1)
+        margin-bottom: 18px
+    &__form
+      flex-direction: column
+    &__message
+      margin-bottom: 15px
+    &__info
+      margin-bottom: 15px
+      margin-top: 0
+    &__button
+      order: 1
+    &__text
+      margin-top: 25px
+  .contact-details
+    &__item
+      column-gap: 6px
 @media (max-width: 576px)
   .navbar
     &-top
@@ -244,6 +389,14 @@
           font-size: 8px
           line-height: 10px
           padding: 4px 9px
+  .rights
+    &-wrapper
+      flex-wrap: wrap
+    &__ul
+      margin-bottom: 10px
+      flex-basis: 100%
+      display: flex
+      justify-content: space-between
 @media (max-width: 420px)
   .hotel
     padding-bottom: 42px
@@ -298,3 +451,7 @@
         height: 190px
         &--big
           height: 190px
+  .rights
+    &__item
+      &:not(:last-child)
+        margin-right: 10px
