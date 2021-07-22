@@ -21,6 +21,13 @@ input, button, textarea {
   color: #ffffff;
 }
 
+.subscribtion__button {
+  padding: 15px 25px;
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 4px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
