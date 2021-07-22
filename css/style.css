@@ -1988,6 +1988,7 @@ template {
     padding-top: 30px;
     padding-right: 19px;
     padding-left: 19px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2003,6 +2004,7 @@ template {
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu__item--mobile--visible:nth-child(2) {
     margin-bottom: 39px;
