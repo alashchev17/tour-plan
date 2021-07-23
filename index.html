@@ -192,7 +192,7 @@
 								</a>
 							</div>
 							<!-- /.booking__call-center -->
-							<button class="button booking__button">View Other Options</button>
+							<button data-toggle="modal" class="button booking__button">View Other Options</button>
 						</div>
 						<!-- /.booking -->
 						<div class="map">
@@ -265,7 +265,7 @@
 								<!-- /.card-info__pricetag -->
 							</div>
 							<!-- /.card-info__wrapper -->
-							<button class="card-info__button card-info__button--big button">Book Now</button>
+							<button data-toggle="modal" class="card-info__button card-info__button--big button">Book Now</button>
 						</div>
 						<!-- /.card-info -->
 					</div>
@@ -300,7 +300,7 @@
 								</div>
 								<!-- /.card-info__pricetag -->
 							</div>
-							<button class="card-info__button button">Book Now</button>
+							<button data-toggle="modal" class="card-info__button button">Book Now</button>
 						</div>
 						<!-- /.card-info -->
 					</div>
@@ -335,7 +335,7 @@
 								</div>
 								<!-- /.card-info__pricetag -->
 							</div>
-							<button class="card-info__button button">Book Now</button>
+							<button data-toggle="modal" class="card-info__button button">Book Now</button>
 						</div>
 						<!-- /.card-info -->
 					</div>
@@ -370,7 +370,7 @@
 								</div>
 								<!-- /.card-info__pricetag -->
 							</div>
-							<button class="card-info__button button">Book Now</button>
+							<button data-toggle="modal" class="card-info__button button">Book Now</button>
 						</div>
 						<!-- /.card-info -->
 					</div>
@@ -406,7 +406,7 @@
 								<!-- /.card-info__pricetag -->
 							</div>
 							<!-- /.card-info__wrapper -->
-							<button class="card-info__button button">Book Now</button>
+							<button data-toggle="modal" class="card-info__button button">Book Now</button>
 						</div>
 						<!-- /.card-info -->
 					</div>
@@ -513,13 +513,13 @@
 					<div class="card activities__card">
 						<img src="./images/activities/1.jpg" alt="The curious corner of chamarel" class="card__image" />
 						<h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-						<button class="card__button button">Book Now</button>
+						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
 					<div class="card activities__card">
 						<img src="./images/activities/2.jpg" alt="Gymkhana club golf course" class="card__image" />
 						<h3 class="card__title">Gymkhana club golf course</h3>
-						<button class="card__button button">Book Now</button>
+						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
 					<div class="card activities__card">
@@ -528,13 +528,13 @@
 							Tamarind falls hiking<br />
 							trip - full day
 						</h3>
-						<button class="card__button button">Book Now</button>
+						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
 					<div class="card activities__card">
 						<img src="./images/activities/4.jpg" alt="The blue marine discovery quest" class="card__image" />
 						<h3 class="card__title">The blue marine discovery quest</h3>
-						<button class="card__button button">Book Now</button>
+						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
 				</div>
@@ -715,6 +715,40 @@
 			</div>
 			<!-- /.container -->
 		</footer>
+
+		<div class="modal">
+			<div class="modal__overlay"></div>
+			<!-- /.modal__overlay -->
+			<div class="modal__dialog">
+				<a href="" class="modal__close">
+					<img src="./images/modal/close.svg" alt="icon: close" />
+				</a>
+				<h3 class="modal__title modal__title--form">booking</h3>
+				<form action="send.php" method="POST" class="form modal__form">
+					<div class="modal__input-group">
+						<input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" />
+					</div>
+					<!-- /.modal__input-group -->
+					<div class="modal__input-group">
+						<input type="tel" class="input modal__input phone" name="phone" placeholder="Phone Number*" />
+					</div>
+					<!-- /.modal__input-group -->
+					<div class="modal__input-group">
+						<input type="email" class="input modal__input email" name="email" placeholder="Email*" />
+					</div>
+					<!-- /.modal__input-group -->
+					<textarea class="input modal__message" name="message" placeholder="Message"></textarea>
+					<div class="modal__wrapper">
+						<button class="button modal__button" type="submit">Send</button>
+						<span class="modal__info">* Required Fields</span>
+					</div>
+					<!-- /.modal__wrapper -->
+				</form>
+			</div>
+			<!-- /.modal__dialog -->
+		</div>
+		<!-- /.modal -->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="./js/parallax.min.js"></script>
 	</body>

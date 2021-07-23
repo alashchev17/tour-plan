@@ -459,6 +459,13 @@
       flex-basis: 100%
       display: flex
       justify-content: space-between
+  .modal
+    &__dialog
+      width: 80%
+      height: 97%
+      padding: 20px 40px
+    &__message
+      min-height: unset
 @media (max-width: 420px)
   .hotel
     padding-bottom: 42px
@@ -517,3 +524,9 @@
     &__item
       &:not(:last-child)
         margin-right: 10px
+  .modal
+    &__wrapper
+      flex-direction: column
+      align-items: start
+    &__button
+      margin-bottom: 15px
