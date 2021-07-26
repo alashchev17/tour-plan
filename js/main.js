@@ -69,8 +69,7 @@ $(document).ready(() => {
 			errorClass: "invalid",
 			messages: {
 				name: {
-					required: "Let us now your name",
-					minlenght: "4",
+					required: "Let us know your name",
 				},
 				email: {
 					required: "We need your email address to contact you",
@@ -78,10 +77,11 @@ $(document).ready(() => {
 				},
 				phone: {
 					required: "Please, fill the number field",
-					minlenght: "10",
+					minlength: jQuery.validator.format("Please, fill full phone number"),
 				},
 			},
 		});
 	});
+
 	$(".phone").mask("+7 (000) 000-00-00");
 });

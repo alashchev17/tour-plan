@@ -251,13 +251,20 @@
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title--form">send us a message</h3>
-						<form action="send.php" method="POST" class="form footer__form">
+						<form action="send.php" method="POST" class="footer__form form">
 							<div class="footer__input-group">
-								<input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" />
+								<input type="text" class="input footer__input" name="name" required placeholder="Your Full Name*" />
 							</div>
 							<!-- /.footer__input-group -->
 							<div class="footer__input-group">
-								<input type="tel" class="input footer__input phone" name="phone" placeholder="Phone Number*" />
+								<input
+									type="tel"
+									class="input footer__input phone"
+									name="phone"
+									minlength="18"
+									required
+									placeholder="Phone Number*"
+								/>
 							</div>
 							<!-- /.footer__input-group -->
 							<textarea
@@ -295,6 +302,7 @@
 			</div>
 			<!-- /.container -->
 		</footer>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="./js/parallax.min.js"></script>
 	</body>
