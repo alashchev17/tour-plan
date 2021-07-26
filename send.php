@@ -10,27 +10,35 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
-if ($email == "") {
+if( $email == "" ) {
   // Формирование самого письма
-  $title = "Новое обращение! - Best Tour Plan";
+  $title = "Новое обращение - Best Tour Plan";
   $body = "
-  <h2>Пользователь оставил заявку на сайте!</h2>
+  <h2>Новое обращение</h2>
   <b>Имя:</b> $name<br>
   <b>Телефон:</b> $phone<br><br>
   <b>Сообщение:</b><br>$message
   ";
-  header('location: thankyou.html');
-} elseif ( $email != "" && $name == "" && $phone == "" && $message == "" ) {
-  // Формирование письма о подписке на новости
-  $title = "Запрос на подписку Best Tour Plan";
+  header ('Location: thankyou.html');
+} elseif( $email != "" && $name == "" && $phone == "" && $message == "" ){
+  $title = "Запрос на подписку Best Tour plan";
   $body = "
-    <h2>Пользователь оставил заявку на новостную рассылку!</h2>
-    <b>Электронная почта:</b> $email<br><br>
-    <span>Данный пользователь хочет подписаться на обновления.</span>
+  <h2>Новое письмо</h2>
+  <b>Электронная почта':</b> $email<br>
+  <span> Данный пользователь хочет подписаться на обновления </span>
   ";
-  header('location: subscribe.html');
-} else {
-  echo 'Something went wrong.. Oops!';
+      // Отображение результата
+  header ('Location: subscribe.html');    
+} else{
+  $title = "Запрос на бронирование номера - Best Tour plan";
+  $body = "
+  <h2>Бронирование номера - Grand Hilton Hotel</h2>
+  <b>Имя:</b> $name<br>
+  <b>Телефон:</b> <a href='tel:$phone'>$phone</a><br>
+  <b>Электронная почта:</b> $email<br><br>
+  <b>Сообщение:</b><br>$message
+  ";
+  header ('Location: booking.html');
 };
 
 // Настройки PHPMailer
