@@ -67,6 +67,11 @@ $(document).ready(() => {
 	$(".form").each(function () {
 		$(this).validate({
 			errorClass: "invalid",
+			rules: {
+				phone: {
+					minlength: 18,
+				},
+			},
 			messages: {
 				name: {
 					required: "Let us know your name",
@@ -77,7 +82,7 @@ $(document).ready(() => {
 				},
 				phone: {
 					required: "Please, fill the number field",
-					minlength: jQuery.validator.format("Please, fill full phone number"),
+					minlength: "Please, fill full phone number",
 				},
 			},
 		});
