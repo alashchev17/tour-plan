@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/aos.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -129,7 +130,7 @@
 					<a href="index.html" class="footer__logo">
 						<img src="./images/vertical-logo.svg" alt="icon:logo" />
 					</a>
-					<div class="footer__list footer__categories">
+					<div class="footer__list footer__categories" data-aos="fade-up" data-aos-delay="100">
 						<h3 class="footer__title">all categories</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -159,7 +160,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__list footer__additional">
+					<div class="footer__list footer__additional" data-aos="fade-up" data-aos-delay="400">
 						<h3 class="footer__title">additional information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -183,7 +184,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__social-network">
+					<div class="footer__social-network" data-aos="fade-left" data-aos-delay="1000">
 						<h3 class="footer__title footer__title--inline">social network</h3>
 						<div class="footer__social-links">
 							<a href="https://www.facebook.com/" target="_blank">
@@ -199,7 +200,7 @@
 						<!-- /.footer__social-links -->
 					</div>
 					<!-- /.footer__social-network -->
-					<div class="footer__list footer__legal">
+					<div class="footer__list footer__legal" data-aos="fade-up" data-aos-delay="700">
 						<h3 class="footer__title">legal information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -217,7 +218,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__contact-details contact-details">
+					<div class="footer__contact-details contact-details" data-aos="fade-right" data-aos-delay="300">
 						<h3 class="footer__title footer__title--contact">contact details</h3>
 						<p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
 						<ul class="footer__ul contact-details__ul">
@@ -249,9 +250,9 @@
 						</ul>
 					</div>
 					<!-- /.footer__contact-details -->
-					<div class="footer__contact-form">
+					<div class="footer__contact-form" data-aos="fade-left" data-aos-delay="600">
 						<h3 class="footer__title footer__title--form">send us a message</h3>
-						<form action="send.php" method="POST" class="form footer__form">
+						<form action="send.php" method="POST" class="footer__form form">
 							<div class="footer__input-group">
 								<input type="text" class="input footer__input" name="name" required placeholder="Your Full Name*" />
 							</div>
@@ -261,8 +262,8 @@
 									type="tel"
 									class="input footer__input phone"
 									name="phone"
-									required
 									minlength="18"
+									required
 									placeholder="Phone Number*"
 								/>
 							</div>
@@ -306,6 +307,7 @@
 		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/jquery.mask.min.js"></script>
 		<script src="./js/jquery.validate.min.js"></script>
+		<script src="./js/aos.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/aos.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -133,7 +134,7 @@
 				</div>
 				<!-- /.hotel-info -->
 				<div class="hotel-grid">
-					<div class="swiper-container hotel-slider hotel__slider">
+					<div class="swiper-container hotel-slider hotel__slider" data-aos="zoom-in" data-aos-delay="200">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper hotel-slider__wrapper">
 							<div class="swiper-slide hotel-slider__slide">
@@ -159,7 +160,7 @@
 					</div>
 					<!-- /.swiper-container -->
 					<div class="hotel-right">
-						<div class="booking">
+						<div class="booking" data-aos="fade-left" data-aos-delay="600">
 							<div class="booking__info">
 								<div class="booking__price">
 									<span class="booking__start">price starts as</span>
@@ -193,7 +194,7 @@
 							<button data-toggle="modal" class="button booking__button">View Other Options</button>
 						</div>
 						<!-- /.booking -->
-						<div class="map">
+						<div class="map" data-aos="flip-up" data-aos-delay="1000">
 							<iframe
 								class="map__frame"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.5147765606994!2d98.29339628671585!3d7.890811300179358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sua!4v1626175507925!5m2!1sru!2sua"
@@ -213,9 +214,9 @@
 		</section>
 		<section class="packages">
 			<div class="container">
-				<h1 class="packages__title">other packages</h1>
+				<h1 class="packages__title" data-aos="fade-down">other packages</h1>
 				<div class="packages-wrapper">
-					<div class="packages-card packages-card--big">
+					<div class="packages-card packages-card--big" data-aos="zoom-in" data-aos-delay="200">
 						<img
 							src="./images/other-package-1.jpg"
 							alt="photo: Hotel Blue Haven"
@@ -268,7 +269,7 @@
 						<!-- /.card-info -->
 					</div>
 					<!-- /.packages-card-big -->
-					<div class="packages-card">
+					<div class="packages-card" data-aos="zoom-in" data-aos-delay="200">
 						<img src="./images/other-package-2.jpg" alt="photo: LUX* Belle Mare" class="packages-card__img" />
 						<span class="offer packages-card__offer">Flash Offer</span>
 						<div class="packages-card__info card-info">
@@ -303,7 +304,7 @@
 						<!-- /.card-info -->
 					</div>
 					<!-- /.packages-card -->
-					<div class="packages-card">
+					<div class="packages-card" data-aos="zoom-in-up" data-aos-delay="100">
 						<img src="./images/other-package-3.jpg" alt="photo: White Palace" class="packages-card__img" />
 						<span class="offer packages-card__offer">Flash Offer</span>
 						<div class="packages-card__info card-info">
@@ -338,7 +339,7 @@
 						<!-- /.card-info -->
 					</div>
 					<!-- /.packages-card -->
-					<div class="packages-card">
+					<div class="packages-card" data-aos="zoom-in-up" data-aos-delay="400">
 						<img src="./images/other-package-4.jpg" alt="photo: Luxury Place" class="packages-card__img" />
 						<span class="offer packages-card__offer">Flash Offer</span>
 						<div class="packages-card__info card-info">
@@ -373,7 +374,7 @@
 						<!-- /.card-info -->
 					</div>
 					<!-- /.packages-card -->
-					<div class="packages-card">
+					<div class="packages-card" data-aos="zoom-in-up" data-aos-delay="700">
 						<img src="./images/other-package-5.jpg" alt="photo: Hotel Five Star" class="packages-card__img" />
 						<span class="offer packages-card__offer">Flash Offer</span>
 						<div class="packages-card__info card-info">
@@ -416,11 +417,17 @@
 		</section>
 		<section class="newsletter" data-parallax="scroll" data-image-src="./images/newsletter.jpg">
 			<div class="newsletter-wrapper">
-				<h2 class="newsletter-title">
+				<h2 class="newsletter-title" data-aos="fade-left" data-aos-delay="300">
 					subscribe to our
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
-				<form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+				<form
+					action="send.php"
+					method="POST"
+					class="subscribe newsletter__subscribe form"
+					data-aos="fade-right"
+					data-aos-delay="500"
+				>
 					<input type="email" class="subscribe__input" name="email" required placeholder="Your email address" />
 					<button class="button subscribe__button" type="submit">Send</button>
 				</form>
@@ -508,19 +515,19 @@
 			<div class="container">
 				<h2 class="activities__title">Other Activities</h2>
 				<div class="activities-wrapper">
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
 						<img src="./images/activities/1.jpg" alt="The curious corner of chamarel" class="card__image" />
 						<h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
 						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
 						<img src="./images/activities/2.jpg" alt="Gymkhana club golf course" class="card__image" />
 						<h3 class="card__title">Gymkhana club golf course</h3>
 						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
 						<img src="./images/activities/3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" />
 						<h3 class="card__title">
 							Tamarind falls hiking<br />
@@ -529,7 +536,7 @@
 						<button data-toggle="modal" class="card__button button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
 						<img src="./images/activities/4.jpg" alt="The blue marine discovery quest" class="card__image" />
 						<h3 class="card__title">The blue marine discovery quest</h3>
 						<button data-toggle="modal" class="card__button button">Book Now</button>
@@ -547,7 +554,7 @@
 					<a href="index.html" class="footer__logo">
 						<img src="./images/vertical-logo.svg" alt="icon:logo" />
 					</a>
-					<div class="footer__list footer__categories">
+					<div class="footer__list footer__categories" data-aos="fade-up" data-aos-delay="100">
 						<h3 class="footer__title">all categories</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -577,7 +584,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__list footer__additional">
+					<div class="footer__list footer__additional" data-aos="fade-up" data-aos-delay="400">
 						<h3 class="footer__title">additional information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -601,7 +608,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__social-network">
+					<div class="footer__social-network" data-aos="fade-left" data-aos-delay="1000">
 						<h3 class="footer__title footer__title--inline">social network</h3>
 						<div class="footer__social-links">
 							<a href="https://www.facebook.com/" target="_blank">
@@ -617,7 +624,7 @@
 						<!-- /.footer__social-links -->
 					</div>
 					<!-- /.footer__social-network -->
-					<div class="footer__list footer__legal">
+					<div class="footer__list footer__legal" data-aos="fade-up" data-aos-delay="700">
 						<h3 class="footer__title">legal information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
@@ -635,7 +642,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__list -->
-					<div class="footer__contact-details contact-details">
+					<div class="footer__contact-details contact-details" data-aos="fade-right" data-aos-delay="300">
 						<h3 class="footer__title footer__title--contact">contact details</h3>
 						<p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
 						<ul class="footer__ul contact-details__ul">
@@ -667,7 +674,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__contact-details -->
-					<div class="footer__contact-form">
+					<div class="footer__contact-form" data-aos="fade-left" data-aos-delay="600">
 						<h3 class="footer__title footer__title--form">send us a message</h3>
 						<form action="send.php" method="POST" class="footer__form form">
 							<div class="footer__input-group">
@@ -766,6 +773,7 @@
 		<script src="./js/parallax.min.js"></script>
 		<script src="./js/jquery.validate.min.js"></script>
 		<script src="./js/jquery.mask.min.js"></script>
+		<script src="./js/aos.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
