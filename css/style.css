@@ -19,12 +19,10 @@ input, button, textarea {
   background-color: #ec1f46;
   cursor: pointer;
   color: #ffffff;
-  padding: 18px;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   border: none;
-  border-radius: 4px;
 }
 
 .subscribtion__button {
@@ -796,7 +794,7 @@ template {
   color: #ffffff;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 28px 28px 0 28px;
   background-color: #0a223d;
 }
 
