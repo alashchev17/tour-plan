@@ -29,6 +29,7 @@ input, button, textarea {
   padding: 15px 25px;
   display: inline-block;
   margin-top: 50px;
+  border-radius: 4px;
 }
 
 a {
@@ -1051,6 +1052,7 @@ template {
   line-height: 160.6%;
   overflow: auto;
   margin-top: -6px;
+  padding-right: 5px;
 }
 
 .card-info__data {
@@ -1365,6 +1367,7 @@ template {
   margin: auto;
   max-height: 115px;
   overflow-Y: auto;
+  padding-right: 5px;
 }
 
 .activities {
@@ -1460,6 +1463,7 @@ template {
   background-color: #0a223d;
   padding: 107px 0 46px;
   color: #BDBDBD;
+  overflow: hidden;
 }
 
 .footer-wrapper {
@@ -1811,6 +1815,8 @@ template {
 
 .modal__button {
   min-width: 160px;
+  padding: 18px;
+  border-radius: 4px;
 }
 
 .modal__wrapper {
@@ -1938,6 +1944,9 @@ template {
     line-height: 38px;
     margin-bottom: 52px;
   }
+  .activities {
+    padding: 60px 0 49px 0;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2064,7 +2073,7 @@ template {
     width: 87%;
   }
   body {
-    padding-top: 78px;
+    padding-top: 68px;
   }
   .navbar--mobile--fixed {
     position: fixed;
@@ -2387,6 +2396,9 @@ template {
   .contact-details__item {
     -webkit-column-gap: 6px;
             column-gap: 6px;
+  }
+  .activities {
+    padding: 60px 0 33px 0;
   }
 }
 
