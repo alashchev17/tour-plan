@@ -142,27 +142,51 @@
       min-height: unset
 @media (min-width: 992px)
   .button
+    transition: 0.2s ease
     &:hover
       background-color: #8f001f
   .navbar
     &-menu
       &__link
+        transition: 0.2s ease
         &:hover
           color: $primary
+  .breadcrumb
+    &-list
+      &__link
+        transition: 0.2s ease
+        &:hover
+          text-decoration: underline
+  .booking
+    &__number
+      transition: 0.2s ease
+      &:hover
+        text-decoration: underline
+        color: $footer-text
   .user
     &__name
+      transition: 0.2s ease
       &:hover
         color: $primary
   .footer
     &__social
       &-icon
+        transition: 0.2s ease
         &:hover
           border: 1px solid $light
           border-radius: 50%
     &__link
+      transition: 0.2s ease
       &:hover
         color: $light
         text-decoration: underline
+  .contact
+    &-details
+      &__link
+        transition: 0.2s ease
+        &:hover
+          color: $light
+          text-decoration: underline
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -384,7 +408,7 @@
     &__item
       column-gap: 6px
   .activities 
-    padding: 60px 0 33px 0
+    padding: 40px 0 33px 0
   
 @media (max-width: 576px)
   .navbar
@@ -498,7 +522,7 @@
       margin-bottom: 42px
     &-slider
       &__text
-        max-height: 266px
+        max-height: 285px
         text-align: left
   .booking
     padding: 23px
